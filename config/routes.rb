@@ -1,7 +1,8 @@
-Shouter::Application.routes.draw do
+Shouter::Application.routes.dr aw do
 	root to: 'homes#show', via: :get
 	resource :dashboard, only: [:show]
   resource :session, only: [:new, :create, :destroy]
   resources :users, only: [:new, :create, :show]
-	resources :shouts, only: [:create, :show]
+	resources :shouts, only: [:show]
+	resources :text_shouts, only: [:create]
 end
