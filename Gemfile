@@ -4,7 +4,9 @@ gem 'rails', '3.2.12'
 
 gem 'sqlite3'
 gem 'strong_parameters', '0.2.0'
-gem 'monban', '0.0.6'
+gem 'monban', '0.0.8'
+gem 'paperclip', '3.4.0'
+gem 'pry'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -15,6 +17,7 @@ end
 group :development, :test do
 	gem 'rspec-rails'
 	gem 'capybara'
+	gem 'factory_girl_rails'
 end
 
 gem 'jquery-rails'

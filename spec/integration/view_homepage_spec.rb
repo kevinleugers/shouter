@@ -1,8 +1,10 @@
 require 'spec_helper'
 
 feature 'Viewing the homepage' do
-	scenario 'see the message hello' do
+	scenario 'seeing the Title' do
 		visit root_path
-		expect(page).to have('hello')
+
+		expect(page).to have_css 'title', text: 'Shouter'
 	end
+
 end
